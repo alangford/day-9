@@ -1,0 +1,77 @@
+we can define context with the key word this
+
+var obj ={
+test:6
+}
+function func(){
+return this.test + 3
+}
+
+context is set at the time of invokcation
+
+explicit .call .apply .bind
+func.call(obj, ) invokes the function right away
+func.apply(obj,) same thing
+func.bind(obj,) same thing but it doesnt invoke right away it it returns the function
+
+iplicit what ever is left to the dot it is bound to
+obj.function();
+
+default/ window if this isn't specisified through implicit or explicit it will change the var thats in the window DANGER
+
+new constructor function
+function person(name, age){
+	
+	this.name = name;
+	this.age = age;
+
+}
+ var me = new person(andrew, 24) will = and obj with a property of my name and age
+
+when creating a constructor function always captilized the first letter of the function name 
+
+
+function func(arg1, arg2) {
+    
+    console.log(this["0"]); 
+// a
+        c
+onsole.log(arg1); 
+// b
+        
+console.log(arg2); 
+// c
+
+}
+
+
+var ayy = 'a'
+
+var bee = 'b'
+
+var cee = 'c'
+
+func.apply(ayy, [bee, cee])
+
+obj = {
+
+  "x":4,
+  "y":5
+}
+
+
+
+
+function average() {
+
+     return (this.x + this.y) / 2;
+
+}
+
+
+var as = average.bind(obj);
+as()
+
+
+
+
