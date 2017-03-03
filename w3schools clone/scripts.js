@@ -54,7 +54,40 @@ $(document).ready(function(){
     });
 
     $("#mini").on("click", function(){
-        $(".mini-bar").toggle();
+        $("#mini-buttons").toggle();
+
+
+    });
+    $("#mini-dropdown2").on("click", function(){
+        $("#mini-tutorials").toggle();
+        $("#mini-references").hide();
+        $("#mini-examples").hide();
+        $("#mini-down-t").fadeToggle(50);
+        $("#mini-up-t").fadeToggle(50);
+        $("#mini-down-r, #mini-down-e").show();
+        $("#mini-up-r, #mini-up-e").hide();
+
+
+    });
+    $("#mini-dropdown3").on("click", function(){
+        $("#mini-references").toggle();
+        $("#mini-tutorials").hide();
+        $("#mini-examples").hide();
+
+        $("#mini-down-r").fadeToggle(50);
+        $("#mini-up-r").fadeToggle(50);
+        $("#mini-down-t, #mini-down-e").show();
+        $("#mini-up-t, #mini-up-e").hide();
+    });
+    $("#mini-dropdown4").on("click", function(){
+        $("#mini-examples").toggle();
+        $("#mini-tutorials").hide();
+        $("#mini-references").hide();
+
+        $("#mini-down-e").fadeToggle(50);
+        $("#mini-up-e").fadeToggle(50);
+        $("#mini-down-t, #mini-down-r").show();
+        $("#mini-up-t, #mini-up-r").hide();
 
 
     });

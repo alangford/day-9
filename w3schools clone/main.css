@@ -171,38 +171,157 @@ position: absolute;
 #down6{
     display: none;
 }
-
-
-.mini-bar{
+#mini-up-t{
     display: none;
+}
+#mini-up-r{
+    display: none;
+}
+#mini-up-e{
+    display: none;
+}
+
+#mini-tutorials{
+    display: none;
+    background-color:white;
+    z-index: 50;
+    position: static;
+    padding: 5vw;
+
+}
+#mini-tutorials div{
+    display: inline-block;
+    background-color:white;
+    width: 20vw;
+    padding: 0 6vw 3vh 6vw;
+}
+#mini-tutorials h3 {
+
+    font-size: 27px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#mini-tutorials a{
+
+    font-size: 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#mini-tutorials a:hover {
+    background-color: #cccccc;
+}
+
+#mini-references{
+    display: none;
+    background-color: #f1f1f1;
+    z-index: 50;
+    position: static;
+
+}
+#mini-references div{
+    display: inline-block;
+    width: 12vw;
+    background-color:white;
+    padding: 0 8vw 5vh 3vw;
+    margin-bottom: 4vh;
+}
+#mini-references h3 {
+
+    font-size: 18px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#mini-references a {
+
+    font-size: 15px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#mini-references a:hover {
+    background-color: #cccccc;
+}
+#mini-examples{
+    display: none;
+    background-color: #f1f1f1;
+    z-index: 50;
+    position: static;
+
+
+}
+#mini-examples div{
+    display: inline-block;
+    background-color:white;
+    width: 25vw;
+    padding: 1.5vh 6vw;
+}
+#mini-examples h3 {
+
+    font-size: 27px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#mini-examples a{
+
+    font-size: 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#mini-examples a:hover {
+    background-color: #cccccc;
+}
+
+
+#mini-buttons{
+    display: none;
+    position: static;
+    background-color: #f1f1f1;
+    z-index: 50;
+    padding: 1vh 9vw;
+
+}
+.mini-dropDown-tutorials{
+   display: block;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: 5vh;
+
+}
+.mini-dropDown-references{
+    display: block;
+    padding-left: 30vw;
+    padding-right: 28vw;
+
+}
+
+.mini-dropDown-examples{
+    display: block;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-bottom: 5vh;
 }
 
 
 
 
 
-
-
-
-
-/*
-add classes for mini bar here
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#mini-tutorials{
+    display: none;
+    background-color: white;
+}
+#mini-references{
+    display: none;
+    background-color: white;
+}
+#mini-examples{
+    display: none;
+    background-color: white;
+}
 
 
 
@@ -220,16 +339,16 @@ nav span:hover{
     }
     .main-header a{
         font-size: 40px;
-        position: relative;
-        text-align: center;
-        top:2vh;
-        right: -30vw;
-    }
+    position: relative;
+    text-align: center;
+    top:2vh;
+    right: -30vw;
+}
     .main-header h4{
         font-size: 20px;
         display: block;
         position: relative;
-        top:1vh;
+        top:2vh;
         right: -25vw;
     }
     .search {
@@ -277,12 +396,14 @@ nav span:hover{
         top: 0vw;
     }
 }
+
 @media screen and (max-width: 600px) {
     .main-header a{
         right: -25vw;
     }
     .main-header h4{
         right: -14vw;
+        top: 1vh
     }
     .search {
         right: -68vw;
@@ -293,7 +414,7 @@ nav span:hover{
 }
 @media screen and (max-width: 425px) {
     .main-header{
-        height: 10vh;
+        height: 20vh;
     }
     .main-header a{
         top: 3vh;
